@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.navbar {
+  position: fixed;
+  height: 8rem;
+  background-color: rgb(15, 18, 74);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.navbar img {
+  width: 15rem;
+}
+.navbar .navigation {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  margin-right: 2rem;
+  align-items: center;
+}
+.navbar .navigation a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.navbar .navigation i {
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.container-header {
+  min-height: 60rem;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-header .description-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 30rem;
+  color: rgb(49, 49, 49);
+}
+.container-header .description-header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(27, 29, 64);
+  padding: 1rem;
+  color: #fff;
+  width: 10rem;
+  gap: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.container-header img {
+  width: 30rem;
+  clip-path: circle(40%);
+}
+
+/*# sourceMappingURL=index.css.map */
