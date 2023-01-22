@@ -5,42 +5,314 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfólio</title>
-        <!-- == BOOSTRAP ICONS -->
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-        <!-- == CSS == -->
+        <link rel="shortcut icon" href="./assets//img/logo-removebg-preview.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="./assets/css/index.css">
-        <!-- == JS == -->
         <script defer src="./assets/js/index.js"></script>
     </head>
     <body>
-        <nav class="navbar">
+        <nav class="navbar-portfolio">
             <img src="./assets/img/logo-removebg-preview.png" alt="img-navbar">
-            
             <div class="navigation">
                 <a href="#home">Home</a>
                 <a href="#sobremim">Sobre mim</a>
-                <a href="#habilidades">Habilidades</a>
-                <a href="#servicos">Serviços</a>
+                <a href="#conhecimentos">Conhecimentos</a>
                 <a href="#portfolio">Portfólio</a>
                 <a href="#contato">Contato</a>
-                <i class="bi bi-sun-fill"></i>
+                <i class="bi bi-moon-stars-fill"></i>
             </div>
         </nav>
 
         <header class="container-header" id="home">
             <div class="description-header">
                 <h1 class="title-header">Olá, me chamo <span>Alexandre</span></h1>
-                <h2 class="subtitle-header">E sou um <span class="typeCargo"> Front-End Development</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ullam voluptatibus ipsum voluptas quam nihil? Laborum eveniet rerum nemo! Repellendus!</p>
-                <a href="#">Contact Me <i class="bi bi-caret-right-fill"></i></a>
+                <h2 class="subtitle-header">E sou um <span class="typeCargo">
+                        Front-End Development</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facilis ullam voluptatibus ipsum voluptas quam nihil?
+                    Laborum eveniet rerum nemo! Repellendus!</p>
+                <a target="_blank" href="https://web.whatsapp.com/send?phone=5582994165918">Contact Me <i class="bi bi-caret-right-fill"></i></a>
             </div>
 
 
-            <img src="https://i.ytimg.com/vi/kX0tq3qsY_U/maxresdefault.jpg" alt="img-header">
+            <img src="https://i.ytimg.com/vi/kX0tq3qsY_U/maxresdefault.jpg"
+                alt="img-header">
 
-            
+
         </header>
 
+        <main class="container-main">
+
+            <section class="container-about" id="sobremim">
+
+                <div  class="info-sections">
+                    <h1 class="title-about">Sobre mim</h1>
+                    <p class="description-about">Minha introdução</p>
+                </div>
+                
+
+                <div class="group-description-about-wrapper">
+
+                    <div class="group-description-about">
+                        <img
+                            src="https://i.ytimg.com/vi/kX0tq3qsY_U/maxresdefault.jpg"
+                            alt="img-about">
+                    </div>
+
+                    <div class="group-description-about">
+                        <p class="description-group-about">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Distinctio eveniet reprehenderit iure
+                            asperiores, error quasi dolores commodi quia
+                            officiis aut, quaerat consequuntur illo vel nihil
+                            fuga iusto tempore! Autem, soluta!
+                        </p>
+                        <a class="btn-download" href="./assets/pdf/Cv Alexandre.pdf" 
+                        download="./assets/pdf/Cv Alexandre.pdf">
+                        Download CV <i class="fa-solid fa-download"></i></i>
+                    </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container-skills" id="conhecimentos">
+                
+                <div class="info-sections">
+                    <h1 class="title-skill">Conhecimentos</h1>
+                    <p class="description-skill">Minhas técnicas</p>
+                </div>
+                
+                <div class="card-skill-wrapper">
+                    <div class="card-skill">
+                        <h2 class="title-skill"> <i class="fa-solid fa-code"></i> Frontend Developer <i class="bi bi-arrow-down-square"></i></h2>
+                        <div class="group-skills">
+                            <h3><i class="bi bi-filetype-html"></i> HTML5</h3>
+                            <h3><i class="bi bi-filetype-css"></i> CSS3</h3>
+                            <h3><i class="bi bi-filetype-scss"></i> SCSS</h3>
+                            <h3><i class="bi bi-filetype-js"></i> JavaScript</h3>
+                            <h3><i class="bi bi-filetype-tsx"></i> TypeScript</h3>
+                            <h3><i class="bi bi-filetype-jsx"></i> REACT</h3>
+                        </div>
+                    </div>
+                    <div class="card-skill">
+                        <h2 class="title-skill"><i class="fa-solid fa-network-wired"></i> Backend Developer <i class="bi bi-arrow-down-square"></i></h2>
+                        <div class="group-skills">
+                            <h3><i class="bi bi-filetype-js"></i> NodeJS</h3>
+                            <h3><i class="bi bi-filetype-py"></i> Python</h3>
+                            <h3><i class="bi bi-filetype-sql"></i> MySQL</h3>
+                            <h3><i class="bi bi-database"></i> MongoDB</h3>
+                        </div>
+                    </div>
+                    <div class="card-skill">
+                        <h2 class="title-skill"><i class="fa-solid fa-screwdriver-wrench"></i> Outras ferramentas <i class="bi bi-arrow-down-square"></i></h2>
+                        <div class="group-skills">
+                            <h3><i class="bi bi-github"></i> GitHub</h3>
+                            <h3><i class="bi bi-git"></i> GIT</h3>
+                            <h3><i class="bi bi-brush-fill"></i> Figman</h3>
+                            <h3><i class="fa-solid fa-hotel"></i> Netlifly</h3>
+                            <h3><img width="25px" src="https://diegomariano.com/wp-content/uploads/2022/04/icone-descricao-gerada-automaticamente.png" alt="logo-boostrap"> Booststrap</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container-portfolio" id="portfolio">
+
+                <div class="info-sections">
+                    <h1 class="title-portfolio">Portfólio</h1>
+                    <p class="description-portfolio">Projetos Desenvolvidos</p>
+                </div>
+                
+
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+
+                      <div class="carousel-item active">
+                        <img  class="img-backround" src="./assets/img/project/frutben-img.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h1>FrutBen</h1>
+                          <p>Projeto sobre frutas, falando sobre os benefícios de algumas frutas para o corpo humano.</p>
+                          <div class="container-linguagens-utilizadas">
+                            <h5>Linguagens Utilizadas para o desenvolvimento :</h5>
+                            <img width="30px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="">
+                            <a target="_blank" href="https://frutas-beneficios-react-alexandre.netlify.app/">Demo <i class="bi bi-box-arrow-right"></i></a>  
+                        </div>  
+                        </div>
+                      </div>
+
+                      <div class="carousel-item active">
+                        <img class="img-backround" src="./assets/img/project/ladingpage-blogr-img.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h1>Landing page blogr</h1>
+                          <p>Projeto sobre frutas, falando sobre os benefícios de algumas frutas para o corpo humano.</p>
+                          <div class="container-linguagens-utilizadas">
+                            <h5>Linguagens Utilizadas para o desenvolvimento :</h5>
+                            <div class="icons-tecnology">
+                                <img width="40px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png" alt="">
+                                <img width="30px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" alt="">
+                                <img width="45px" src="https://miro.medium.com/max/450/0*4tULZP6SMFXFHyc9.png" alt="">
+                            </div>
+                            <a target="_blank" href="https://lading-page-blogr-alexandre.netlify.app/">Demo <i class="bi bi-box-arrow-right"></i></a>  
+                        </div>  
+                        </div>
+                      </div>
+
+                      <div class="carousel-item active">
+                        <img class="img-backround" src="./assets/img/project/sistema-financas-img.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h1>Sistema de finanças</h1>
+                          <p>Projeto sobre frutas, falando sobre os benefícios de algumas frutas para o corpo humano.</p>
+                          <div class="container-linguagens-utilizadas">
+                            <h5>Linguagens Utilizadas para o desenvolvimento :</h5>
+                            <img width="30px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="">
+                            <a target="_blank" href="https://controle-financeiro-ale.netlify.app/">Demo <i class="bi bi-box-arrow-right"></i></a>  
+                        </div>  
+                        </div>
+                      </div>
+
+                      <div class="carousel-item active">
+                        <img class="img-backround" src="./assets/img/project/todolist-express-img.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h1>Todo list com NodeJS</h1>
+                          <p>Projeto sobre frutas, falando sobre os benefícios de algumas frutas para o corpo humano.</p>
+                          <div class="container-linguagens-utilizadas">
+                            <h5>Linguagens Utilizadas para o desenvolvimento :</h5>
+                            <div class="icons-tecnology">
+                                <img width="40px" src="https://bachasoftware.com/wp-content/uploads/elementor/thumbs/nodejslogo-pzv7y8cvs5nlt9i0oxpi7xgx89017n87dbebosebg0.png" alt="">
+                                <img width="30px" src="https://www.opc-router.de/wp-content/uploads/2021/03/mongodb_thumbnail.png" alt="">
+                            </div>
+                            <a target="_blank" href="https://frutas-beneficios-react-alexandre.netlify.app/">Demo <i class="bi bi-box-arrow-right"></i></a>  
+                        </div>  
+                        </div>
+                      </div>
+
+                      <div class="carousel-item active">
+                        <img class="img-backround" src="./assets/img/project/ecommerce-cafe-img.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h1>Ecommerce café</h1>
+                          <p>Projeto sobre frutas, falando sobre os benefícios de algumas frutas para o corpo humano.</p>
+                          <div class="container-linguagens-utilizadas">
+                            <h5>Linguagens Utilizadas para o desenvolvimento :</h5>
+                            <div class="icons-tecnology">
+                                <img width="40px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png" alt="">
+                                <img width="30px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" alt="">
+                                <img width="45px" src="https://miro.medium.com/max/450/0*4tULZP6SMFXFHyc9.png" alt="">
+                            </div>
+                            <a target="_blank" href="https://ecommerce-cafe-alexandre.netlify.app/">Demo <i class="bi bi-box-arrow-right"></i></a>  
+                        </div>  
+                          
+                        </div>
+                      </div>    
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </section>
+
+            <section class="container-contact" id="contato">
+
+                <div class="info-sections">
+                    <h1 class="title-contact">Contact me</h1>
+                    <p class="description-contact">Entre em contato comigo</p>
+                </div>
+               
+
+                <div class="group-contact-wrapper">
+
+                    <div class="group-contact">
+                        <div class="contact">
+                            <i class="bi bi-telephone-fill"></i> 
+                            <div class="description-contact">
+                                <h2>Telefone</h2>
+                                <p>(82) 9 9416-5918</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="contact">
+                            <i class="bi bi-envelope-fill"></i>
+                            <div class="description-contact">
+                                <h2>E-mail</h2>
+                                <p>alexandrejrdevfrontend@gmail.com</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="contact">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <div class="description-contact">
+                                <h2>Localização</h2>
+                                <p>Alagoas - Paulo Jacinto</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    
+
+                    <form>
+                        <div class="group-form-input">
+                            <div class="group-input">
+                                <input autocomplete="off" id="nome" type="text">
+                                <label for="nome">Nome</label>
+                            </div>
+                            <div class="group-input">
+                                <input autocomplete="off" id="Email" type="text">
+                                <label for="Email">Email</label>
+                            </div>
+                        </div>
+                        <div class="group-form-input">
+                                <input autocomplete="off" type="text" id="project">
+                                <label for="project">Projeto</label>
+                        </div>
+                        <div class="group-form-input">
+                            <textarea name="text" id="text"></textarea>    
+                        </div>
+
+                        <div class="group-form-input">
+                            <button class="btn_form">Enviar mensagem <i class="fa-solid fa-right-to-bracket"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="container-footer">
+            <div class="group-footer-wrapper">
+                <div class="group-footer">
+                    <h1 class="title-footer">Alexandre</h1>
+                    <p class="description-footer">Frontend Developer</p>
+                </div>
+
+                <div class="group-footer">
+                    <a href="#sobremim">Sobre mim</a>
+                    <a href="#conhecimentos">Conhecimentos</a>
+                    <a href="#portfolio">Portfólio</a>
+                    <a href="#contato">Contato</a>
+                </div>
+
+                <div class="group-footer">
+                    <a target="_blank" href="https://github.com/Alexandre192001"><i class="bi bi-github"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/alexandre-j%C3%BAnior-front-end/"><i class="bi bi-linkedin"></i></a>
+                    <a target="_blank" href="https://web.whatsapp.com/send?phone=5582994165918"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

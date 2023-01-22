@@ -6,33 +6,39 @@
   font-family: "Poppins";
 }
 
-.navbar {
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar-portfolio {
   position: fixed;
-  height: 8rem;
-  background-color: rgb(15, 18, 74);
+  height: 6rem;
   width: 100%;
   display: flex;
+  background-color: #fff;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  z-index: 1000;
+  transition: all 1.5s;
 }
-.navbar img {
+.navbar-portfolio img {
   width: 15rem;
 }
-.navbar .navigation {
+.navbar-portfolio .navigation {
   display: flex;
   gap: 2rem;
   justify-content: space-around;
   margin-right: 2rem;
   align-items: center;
 }
-.navbar .navigation a {
-  color: #fff;
+.navbar-portfolio .navigation a {
+  color: rgb(0, 0, 0);
   font-size: 1.2rem;
   text-decoration: none;
 }
-.navbar .navigation i {
-  color: #fff;
+.navbar-portfolio .navigation i {
+  color: rgb(0, 0, 0);
   font-size: 1.2rem;
   cursor: pointer;
 }
@@ -44,6 +50,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1.5s;
 }
 .container-header .description-header {
   display: flex;
@@ -69,6 +76,333 @@
 .container-header img {
   width: 30rem;
   clip-path: circle(40%);
+}
+
+.container-main {
+  height: auto;
+  width: 100%;
+}
+.container-main .info-sections {
+  text-align: center;
+}
+.container-main .info-sections h1 {
+  font-size: 2.5rem;
+}
+.container-main .info-sections p {
+  color: #212121;
+}
+.container-main .container-about {
+  width: 100%;
+  min-height: 55rem;
+  transition: all 1.5s;
+}
+.container-main .container-about .group-description-about-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 2rem;
+}
+.container-main .container-about .group-description-about-wrapper .group-description-about:nth-child(1) img {
+  border-radius: 1rem;
+  margin-left: 1rem;
+}
+.container-main .container-about .group-description-about-wrapper .group-description-about:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.container-main .container-about .group-description-about-wrapper .group-description-about:nth-child(2) .btn-download {
+  color: #fff;
+  text-decoration: none;
+  background-color: rgb(27, 29, 64);
+  padding: 1rem;
+  width: 12rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  transition: all 0.4s ease;
+}
+.container-main .container-about .group-description-about-wrapper .group-description-about:nth-child(2) .btn-download:hover {
+  transform: scale(0.8);
+  color: rgb(27, 29, 64);
+  background-color: #fff;
+  border: solid 1px rgb(27, 29, 64);
+}
+.container-main .container-skills {
+  width: 100%;
+  min-height: 35rem;
+  transition: all 1.5s;
+}
+.container-main .container-skills .card-skill-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5rem;
+  flex-direction: column;
+  gap: 5rem;
+}
+.container-main .container-skills .card-skill-wrapper .card-skill {
+  background-color: rgb(27, 29, 64);
+  width: 40rem;
+  height: 3.5rem;
+  padding: 1rem;
+  color: #fff;
+  overflow: hidden;
+  border-radius: 1rem;
+  transition: all 0.7s ease;
+}
+.container-main .container-skills .card-skill-wrapper .card-skill h2 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  transition: all 0.7s ease;
+}
+.container-main .container-skills .card-skill-wrapper .card-skill h2 .bi {
+  cursor: pointer;
+}
+.container-main .container-skills .card-skill-wrapper .card-skill .group-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+.container-main .container-skills .card-skill-wrapper .card-skill .group-skills h3 {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.container-main .container-skills .card-skill-wrapper .card-skill .group-skills h3 img {
+  filter: grayscale(100%);
+}
+.container-main .container-skills .card-skill-wrapper .card-skill.heigthCard {
+  height: 25rem;
+}
+.container-main .container-portfolio {
+  min-height: 60rem;
+  width: 100%;
+  transition: all 1.5s;
+}
+.container-main .container-portfolio .carousel .carousel-indicators button {
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+}
+.container-main .container-portfolio .carousel .carousel-inner .carousel-item {
+  background-color: #000000;
+  position: relative;
+  overflow: hidden;
+}
+.container-main .container-portfolio .carousel .carousel-inner .carousel-item .img-backround {
+  height: 100%;
+  opacity: 0.4;
+  filter: blur(3px);
+}
+.container-main .container-portfolio .carousel .carousel-inner .carousel-caption {
+  margin-bottom: 5rem;
+}
+.container-main .container-portfolio .carousel .carousel-inner .carousel-caption .container-linguagens-utilizadas {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.container-main .container-portfolio .carousel .carousel-inner .carousel-caption .container-linguagens-utilizadas a {
+  text-decoration: none;
+  background-color: rgb(27, 29, 64);
+  color: #fff;
+  padding: 1rem;
+  width: 12rem;
+  font-size: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.container-main .container-portfolio .carousel .carousel-inner .carousel-caption .container-linguagens-utilizadas a i {
+  margin: 1rem;
+}
+.container-main .container-contact {
+  min-height: 45rem;
+  width: 100%;
+  transition: all 1.5s;
+}
+.container-main .container-contact .group-contact-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 6rem;
+  justify-content: space-around;
+}
+.container-main .container-contact .group-contact-wrapper .group-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.container-main .container-contact .group-contact-wrapper .group-contact .contact {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  border-bottom: solid 2px rgb(27, 29, 64);
+}
+.container-main .container-contact .group-contact-wrapper .group-contact .contact i {
+  font-size: 3rem;
+  color: rgb(27, 29, 64);
+}
+.container-main .container-contact .group-contact-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.container-main .container-contact .group-contact-wrapper form .group-form-input {
+  display: flex;
+  position: relative;
+  gap: 1rem;
+}
+.container-main .container-contact .group-contact-wrapper form .group-form-input .group-input {
+  position: relative;
+}
+.container-main .container-contact .group-contact-wrapper form .group-form-input input {
+  outline: none;
+  border: none;
+  padding: 2rem;
+  background-color: #9cd1e8;
+  border-radius: 1rem;
+}
+.container-main .container-contact .group-contact-wrapper form .group-form-input textarea {
+  background-color: #9cd1e8;
+  border: none;
+  outline: none;
+  padding: 2rem;
+  width: 100%;
+  border-radius: 0.4rem;
+  resize: none;
+}
+.container-main .container-contact .group-contact-wrapper form .group-form-input label {
+  position: absolute;
+  left: 2rem;
+  top: 0.5rem;
+}
+.container-main .container-contact .group-contact-wrapper form .group-form-input .btn_form {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: rgb(27, 29, 64);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: all 0.4s ease;
+}
+.container-main .container-contact .group-contact-wrapper form .group-form-input .btn_form:hover {
+  background-color: #fff;
+  color: rgb(27, 29, 64);
+  border: solid 1px rgb(27, 29, 64);
+}
+
+.container-footer {
+  width: 100%;
+  min-height: 20rem;
+  background-color: rgb(27, 29, 64);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 1.5s;
+}
+.container-footer .group-footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+.container-footer .group-footer-wrapper .group-footer {
+  display: flex;
+  flex-direction: column;
+}
+.container-footer .group-footer-wrapper .group-footer a {
+  text-decoration: none;
+  color: #fff;
+}
+.container-footer .group-footer-wrapper .group-footer:nth-child(1) {
+  font-size: 1.5rem;
+}
+.container-footer .group-footer-wrapper .group-footer:nth-child(2) {
+  flex-direction: row;
+  gap: 2rem;
+}
+.container-footer .group-footer-wrapper .group-footer:nth-child(3) {
+  font-size: 1.5rem;
+  flex-direction: row;
+  gap: 2rem;
+}
+.container-footer .group-footer-wrapper .group-footer:nth-child(3) a {
+  display: block;
+  transition: all 0.2s;
+}
+.container-footer .group-footer-wrapper .group-footer:nth-child(3) a:hover {
+  transform: scale(1.5);
+}
+
+.navbar-portfolio.dark {
+  background-color: #000000;
+}
+.navbar-portfolio.dark .navigation a, .navbar-portfolio.dark .navigation i {
+  color: #fff;
+}
+
+.container-header.dark {
+  background-color: #000000;
+}
+.container-header.dark .description-header {
+  color: #fff;
+}
+
+.container-main .container-about.dark {
+  background-color: #000000;
+}
+.container-main .container-about.dark .info-sections h1, .container-main .container-about.dark .info-sections p {
+  color: #fff;
+}
+.container-main .container-about.dark .group-description-about-wrapper {
+  color: #fff;
+}
+.container-main .container-skills.dark {
+  background-color: #000000;
+}
+.container-main .container-skills.dark .info-sections h1, .container-main .container-skills.dark .info-sections p {
+  color: #fff;
+}
+.container-main .container-portfolio.dark {
+  background-color: #000000;
+}
+.container-main .container-portfolio.dark .info-sections h1, .container-main .container-portfolio.dark .info-sections p {
+  color: #fff;
+}
+.container-main .container-contact.dark {
+  background-color: #000000;
+}
+.container-main .container-contact.dark .info-sections h1, .container-main .container-contact.dark .info-sections p {
+  color: #fff;
+}
+.container-main .container-contact.dark .group-contact-wrapper {
+  color: #fff;
+}
+.container-main .container-contact.dark .group-contact-wrapper .contact {
+  color: #fff;
+  border-bottom: solid 2px #fff;
+}
+.container-main .container-contact.dark .group-contact-wrapper .contact i {
+  color: #fff;
+}
+.container-main .container-contact.dark .group-contact-wrapper .group-form-input {
+  color: #000000;
 }
 
 /*# sourceMappingURL=index.css.map */
