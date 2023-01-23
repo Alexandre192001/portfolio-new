@@ -165,7 +165,7 @@ body::-webkit-scrollbar-track {
 .container-main .container-skills .card-skill-wrapper .card-skill {
   background-color: rgb(27, 29, 64);
   width: 80%;
-  height: 3.8rem;
+  height: 5rem;
   padding: 1rem;
   color: #fff;
   overflow: hidden;
@@ -199,62 +199,89 @@ body::-webkit-scrollbar-track {
   filter: grayscale(100%);
 }
 .container-main .container-skills .card-skill-wrapper .card-skill.heigthCard {
-  height: 25rem;
+  height: 27rem;
 }
 .container-main .container-portfolio {
-  min-height: 60rem;
+  min-height: 70rem;
   width: 100%;
   transition: all 1.5s;
   overflow: hidden;
 }
-.container-main .container-portfolio .container-carousel-portfolio {
+.container-main .container-portfolio .carousel-container-wrapper {
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.container-main .container-portfolio .container-carousel-portfolio .carousel {
-  width: 90%;
-  height: 60rem;
-}
-.container-main .container-portfolio .container-carousel-portfolio .carousel .carousel-indicators button {
-  border-radius: 50%;
-  width: 1rem;
-  height: 1rem;
-}
-.container-main .container-portfolio .container-carousel-portfolio .carousel .carousel-inner .carousel-item {
-  background-color: #000000;
   position: relative;
+}
+.container-main .container-portfolio .carousel-container-wrapper .carousel {
+  width: 80%;
+  background-color: #212121;
+  height: 40rem;
   overflow: hidden;
+  border-radius: 2rem;
 }
-.container-main .container-portfolio .container-carousel-portfolio .carousel .carousel-inner .carousel-item .img-backround {
-  height: 100%;
-  opacity: 0.4;
-  filter: blur(3px);
+.container-main .container-portfolio .carousel-container-wrapper .carousel .carousel-items {
+  transition: all 0.4s;
+  border-radius: 0.4rem;
 }
-.container-main .container-portfolio .container-carousel-portfolio .carousel .carousel-inner .carousel-caption {
-  margin-bottom: 5rem;
+.container-main .container-portfolio .carousel-container-wrapper .carousel .carousel-items .description-itens {
+  display: none;
 }
-.container-main .container-portfolio .container-carousel-portfolio .carousel .carousel-inner .carousel-caption .container-linguagens-utilizadas {
+.container-main .container-portfolio .carousel-container-wrapper .carousel .carousel-items img {
+  display: none;
+}
+.container-main .container-portfolio .carousel-container-wrapper .carousel .carousel-items.hidden img {
+  object-fit: contain;
+  display: block;
+  filter: blur(2px);
+}
+.container-main .container-portfolio .carousel-container-wrapper .carousel .carousel-items.hidden .description-itens {
+  position: absolute;
+  bottom: -15rem;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+  display: block;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
+  width: 90%;
+}
+.container-main .container-portfolio .carousel-container-wrapper .carousel .carousel-items.hidden .description-itens .btn-projetos {
+  margin-top: 1rem;
+  display: flex;
   align-items: center;
-  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  margin-right: 0.4rem;
 }
-.container-main .container-portfolio .container-carousel-portfolio .carousel .carousel-inner .carousel-caption .container-linguagens-utilizadas a {
-  text-decoration: none;
+.container-main .container-portfolio .carousel-container-wrapper .carousel .carousel-items.hidden .description-itens .btn-projetos a {
+  display: block;
   background-color: rgb(27, 29, 64);
-  color: #fff;
   padding: 1rem;
-  width: 12rem;
-  font-size: 1rem;
-  border-top-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  color: #fff;
+  width: 10rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  transition: all 0.4s ease;
 }
-.container-main .container-portfolio .container-carousel-portfolio .carousel .carousel-inner .carousel-caption .container-linguagens-utilizadas a i {
+.container-main .container-portfolio .carousel-container-wrapper .carousel .carousel-items.hidden .description-itens .btn-projetos a:hover {
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  border: solid 2px rgb(27, 29, 64);
+}
+.container-main .container-portfolio .carousel-container-wrapper .leftandrigthcarousel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  position: absolute;
+}
+.container-main .container-portfolio .carousel-container-wrapper .leftandrigthcarousel i {
+  font-size: 2rem;
   margin: 1rem;
+  cursor: pointer;
 }
 .container-main .container-contact {
   min-height: 45rem;
@@ -416,9 +443,13 @@ body::-webkit-scrollbar-track {
 }
 .container-main .container-portfolio.dark {
   background-color: #000000;
+  color: #fff;
 }
 .container-main .container-portfolio.dark .info-sections h1,
 .container-main .container-portfolio.dark .info-sections p {
+  color: #fff;
+}
+.container-main .container-portfolio.dark .carousel-container-wrapper .carousel .carousel-items .description-itens {
   color: #fff;
 }
 .container-main .container-contact.dark {
@@ -442,9 +473,21 @@ body::-webkit-scrollbar-track {
   color: #000000;
 }
 
+@media (max-width: 1570px) {
+  .container-about .group-description-about-wrapper {
+    flex-direction: column;
+  }
+  .container-about .group-description-about-wrapper img {
+    width: 50rem;
+  }
+  .container-about .group-description-about-wrapper .description-group-about {
+    width: 50rem;
+  }
+}
 @media (max-width: 940px) {
   .navbar-portfolio.dark i {
     color: #fff;
+    z-index: 2;
   }
   .navbar-portfolio .menu {
     display: block;
@@ -452,11 +495,12 @@ body::-webkit-scrollbar-track {
     cursor: pointer;
     font-size: 2rem;
     margin-right: 3rem;
+    z-index: 1;
   }
   .navbar-portfolio .navigation {
     position: absolute;
     flex-direction: column;
-    top: 7rem;
+    top: 0rem;
     height: 0;
     width: 0;
     right: -55rem;
@@ -472,7 +516,7 @@ body::-webkit-scrollbar-track {
     color: #fff;
   }
   .navbar-portfolio .navigation.menuspeed {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     right: -2rem;
   }
@@ -485,17 +529,6 @@ body::-webkit-scrollbar-track {
   }
   .container-footer .group-footer-wrapper .group-footer:nth-child(2) {
     flex-direction: column;
-  }
-}
-@media (max-width: 1570px) {
-  .container-about .group-description-about-wrapper {
-    flex-direction: column;
-  }
-  .container-about .group-description-about-wrapper img {
-    width: 50rem;
-  }
-  .container-about .group-description-about-wrapper .description-group-about {
-    width: 50rem;
   }
 }
 @media (max-width: 970px) {
@@ -553,6 +586,9 @@ body::-webkit-scrollbar-track {
     align-items: center;
     justify-content: center;
   }
+  .container-skills .card-skill-wrapper .card-skill {
+    width: 100%;
+  }
   .container-skills .card-skill-wrapper .card-skill h2 {
     font-size: 20px;
   }
@@ -570,7 +606,8 @@ body::-webkit-scrollbar-track {
   .container-contact .group-contact-wrapper form .group-form-input {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
+    margin-left: 1rem;
   }
   .container-contact .group-contact-wrapper form .group-form-input input {
     width: 90%;

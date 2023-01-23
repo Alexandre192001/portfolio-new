@@ -192,7 +192,7 @@ body::-webkit-scrollbar-track {
             .card-skill {
                 background-color: rgb(27, 29, 64);
                 width: 80%;
-                height: 3.8rem;
+                height: 5rem;
                 padding: 1rem;
                 color: #fff;
                 overflow: hidden;
@@ -232,7 +232,7 @@ body::-webkit-scrollbar-track {
                 }
 
                 &.heigthCard {
-                    height: 25rem;
+                    height: 27rem;
                 }
             }
 
@@ -240,73 +240,102 @@ body::-webkit-scrollbar-track {
     }
 
     .container-portfolio {
-        min-height: 60rem;
+        min-height: 70rem;
         width: 100%;
         transition: all 1.5s;
         overflow: hidden;
 
-        .container-carousel-portfolio {
+        .carousel-container-wrapper{
             width: 100%;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-
-            .carousel {
-                width: 90%;
-                height: 60rem;
-
-                .carousel-indicators {
-                    button {
-                        border-radius: 50%;
-                        width: 1rem;
-                        height: 1rem;
+            position: relative;
+            
+            .carousel{
+                width: 80% ;
+                background-color: #212121;
+                height: 40rem;
+                overflow: hidden;
+                border-radius: 2rem;
+                
+                .carousel-items{
+                    transition: all .4s;
+                    border-radius: .4rem;
+                    
+                    .description-itens{
+                        display: none;
                     }
-                }
 
-                .carousel-inner {
-                    .carousel-item {
-                        background-color: #000000;
-                        position: relative;
-                        overflow: hidden;
+                    img{
+                        display: none;
+                    }
 
-                        .img-backround {
-                            height: 100%;
-                            opacity: .4;
-                            filter: blur(3px);
+                    &.hidden{
+                        img{
+                            object-fit: contain;
+                            display: block;
+                            filter: blur(2px);
                         }
-                    }
 
-                    .carousel-caption {
-                        margin-bottom: 5rem;
-
-                        .container-linguagens-utilizadas {
+                        .description-itens{
+                            position: absolute;
+                            bottom: -15rem;
+                            color: rgb(0, 0, 0);
+                            z-index: 1;
+                            display: block;
                             display: flex;
                             flex-direction: column;
-                            gap: 2rem;
-                            align-items: center;
-                            justify-content: center;
+                            gap: 1rem;
+                            width: 90%;
 
-                            a {
-                                text-decoration: none;
-                                background-color: rgb(27, 29, 64);
-                                color: #fff;
-                                padding: 1rem;
-                                width: 12rem;
-                                font-size: 1rem;
-                                border-top-left-radius: 1rem;
-                                border-bottom-right-radius: 1rem;
+                            .btn-projetos{
+                                margin-top: 1rem;
+                                display: flex;
+                                align-items: center;
+                                text-align: center;
+                                gap: 1rem;
+                                margin-right: .4rem;
 
-                                i {
-                                    margin: 1rem;
+                                a{
+                                    display: block;
+                                    background-color: rgb(27, 29, 64);
+                                    padding: 1rem;
+                                    color: #fff;
+                                    width: 10rem;
+                                    text-decoration: none;
+                                    border-radius: 1rem;
+                                    transition: all .4s ease;
+                                    
+    
+                                    &:hover{
+                                        background-color: #fff;
+                                        color: rgb(0, 0, 0);
+                                        border: solid 2px rgb(27, 29, 64);
+                                    }
                                 }
-                            }
+                            } 
                         }
-
                     }
                 }
             }
-        }
+            .leftandrigthcarousel{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                z-index: 1;
+                position: absolute;
+                
+
+                i{
+                    font-size: 2rem;
+                    margin: 1rem;
+                    cursor: pointer;
+                }
+            }
+        }  
+        
     }
 
     .container-contact {
@@ -517,12 +546,22 @@ body::-webkit-scrollbar-track {
 
     .container-portfolio.dark {
         background-color: #000000;
+        color: #fff;
 
         .info-sections {
 
             h1,
             p {
                 color: #fff;
+            }
+        }
+        .carousel-container-wrapper{
+            .carousel{
+                .carousel-items{
+                    .description-itens{
+                        color: #fff;
+                    }
+                }
             }
         }
     }
@@ -558,12 +597,30 @@ body::-webkit-scrollbar-track {
 }
 
 // RESPONSIVIDADE
+@media(max-width:1570px) {
+    .container-about {
+        .group-description-about-wrapper {
+            flex-direction: column;
+
+            img {
+                width: 50rem;
+            }
+
+            .description-group-about {
+                width: 50rem;
+            }
+        }
+    }
+}
+
 @media(max-width:940px) {
     .navbar-portfolio {
 
         &.dark {
+
             i {
                 color: #fff;
+                z-index: 2;
             }
         }
 
@@ -573,12 +630,13 @@ body::-webkit-scrollbar-track {
             cursor: pointer;
             font-size: 2rem;
             margin-right: 3rem;
+            z-index: 1;
         }
 
         .navigation {
             position: absolute;
             flex-direction: column;
-            top: 7rem;
+            top: 0rem;
             height: 0;
             width: 0;
             right: -55rem;
@@ -597,7 +655,7 @@ body::-webkit-scrollbar-track {
             }
 
             &.menuspeed {
-                height: 90vh;
+                height: 100vh;
                 width: 100%;
                 right: -2rem;
             }
@@ -616,22 +674,6 @@ body::-webkit-scrollbar-track {
 
             .group-footer:nth-child(2) {
                 flex-direction: column;
-            }
-        }
-    }
-}
-
-@media(max-width:1570px) {
-    .container-about {
-        .group-description-about-wrapper {
-            flex-direction: column;
-
-            img {
-                width: 50rem;
-            }
-
-            .description-group-about {
-                width: 50rem;
             }
         }
     }
@@ -710,7 +752,7 @@ body::-webkit-scrollbar-track {
             justify-content: center;
 
             .card-skill {
-
+                width: 100%;
 
                 h2 {
                     font-size: 20px;
@@ -738,7 +780,8 @@ body::-webkit-scrollbar-track {
                 .group-form-input {
                     display: flex;
                     flex-direction: column;
-                    width: 100%;
+                    width: 90%;
+                    margin-left: 1rem;
 
                     input {
                         width: 90%;
