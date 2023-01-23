@@ -49,3 +49,30 @@ function HeigthCard(element){
     }
     
 }
+
+
+const menu = document.querySelector(".bi-list")
+menu.addEventListener("click", menuSpeed)
+
+function menuSpeed(){
+    if(this.classList.toggle("bi-x-lg")){
+        this.classList.remove("bi-list")
+        document.querySelector(".navigation").classList.add("menuspeed")
+    } else if(this.classList.toggle("bi-list")){
+        this.classList.remove("bi-x-lg")
+        document.querySelector(".navigation").classList.remove("menuspeed")
+    }
+}
+
+const navigations = document.querySelectorAll(".navigation a")
+navigations.forEach((a)=>{
+    a.addEventListener("click",removeMenuClick)
+})
+
+function removeMenuClick(e){
+    const removeMenu = e.target
+    const remove = removeMenu.closest(".navigation")
+    remove.classList.remove("menuspeed")
+    document.querySelector(".menu").classList.remove("bi-x-lg")
+    document.querySelector(".menu").classList.add("bi-list")
+}
