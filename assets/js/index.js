@@ -114,3 +114,22 @@ leftCarousel.addEventListener("click", function () {
     })
     carouselItems[currentIndexCarousel].classList.add("hidden")
 })
+
+
+const elementosAnimationScroll = document.querySelectorAll("[data-anime]")
+const animationClass = "animate"
+
+function animationScroll(){
+    const winTop = window.pageYOffset + ((window.innerHeight*3)/4)
+    elementosAnimationScroll.forEach((elementos)=>{
+        if(winTop>elementos.offsetTop){
+            elementos.classList.add(animationClass)
+        } else {
+            elementos.classList.remove(animationClass)
+        }
+    })
+}   
+
+window.addEventListener("scroll", function(){
+    animationScroll()
+})

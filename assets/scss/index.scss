@@ -26,6 +26,20 @@ body::-webkit-scrollbar-track {
 
 }
 
+[data-anime]{
+    opacity: 0;
+    transition: .4s;    
+}
+
+[data-anime="bottom"]{
+    transform: translateY(50rem);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .navbar-portfolio {
     position: fixed;
     height: 6rem;
