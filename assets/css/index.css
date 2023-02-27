@@ -217,7 +217,7 @@ body::-webkit-scrollbar-track {
   height: 27rem;
 }
 .container-main .container-portfolio {
-  min-height: 40rem;
+  min-height: 50rem;
   width: 100%;
   transition: all 1.5s;
   overflow: hidden;
@@ -225,15 +225,16 @@ body::-webkit-scrollbar-track {
 }
 .container-main .container-portfolio .carousel-container-wrapper {
   width: 100%;
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 .container-main .container-portfolio .carousel-container-wrapper .carousel {
-  width: 30rem;
+  width: 80%;
   background-color: #212121;
-  height: 30rem;
+  height: 40rem;
   overflow: hidden;
   position: relative;
   border-radius: 1rem;
@@ -436,6 +437,11 @@ body::-webkit-scrollbar-track {
 }
 .container-footer .group-footer-wrapper .group-footer:nth-child(3) a:hover {
   transform: scale(1.5);
+}
+.container-footer .copy-footer {
+  color: #fff;
+  margin-top: 7rem;
+  text-align: center;
 }
 
 .navbar-portfolio.dark {

@@ -257,7 +257,7 @@ body::-webkit-scrollbar-track {
     }
 
     .container-portfolio {
-        min-height: 40rem;
+        min-height: 50rem;
         width: 100%;
         transition: all 1.5s;
         overflow: hidden;
@@ -265,15 +265,16 @@ body::-webkit-scrollbar-track {
 
         .carousel-container-wrapper{
             width: 100%;
+            margin-top: 2rem;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
             
             .carousel{
-                width: 30rem ;
+                width:80% ;
                 background-color: #212121;
-                height: 30rem;
+                height: 40rem;
                 overflow: hidden;
                 position: relative;
                 border-radius: 1rem;
@@ -522,6 +523,12 @@ body::-webkit-scrollbar-track {
 
 
         }
+    }
+
+    .copy-footer{
+        color: #fff;
+        margin-top: 7rem;
+        text-align: center;
     }
 
 }
