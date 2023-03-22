@@ -532,9 +532,14 @@ body::-webkit-scrollbar-track {
     margin-right: 3rem;
     z-index: 1;
   }
+  .navbar-portfolio .bi-x-lg {
+    color: #fff;
+  }
   .navbar-portfolio .navigation {
     position: absolute;
+    justify-content: center;
     flex-direction: column;
+    gap: 2rem;
     top: 0rem;
     height: 0;
     width: 0;
@@ -544,8 +549,8 @@ body::-webkit-scrollbar-track {
     transition: all 0.4s ease;
   }
   .navbar-portfolio .navigation a {
-    border-bottom: solid 1px rgb(255, 255, 255);
     color: #fff;
+    gap: 0;
   }
   .navbar-portfolio .navigation .bi-moon-stars-fill {
     color: #fff;

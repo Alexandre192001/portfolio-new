@@ -664,6 +664,8 @@ body::-webkit-scrollbar-track {
             }
         }
 
+       
+
         .menu {
             display: block;
             color: rgb(0, 0, 0);
@@ -672,10 +674,16 @@ body::-webkit-scrollbar-track {
             margin-right: 3rem;
             z-index: 1;
         }
+        
+        .bi-x-lg{
+            color: #fff;
+        }
 
         .navigation {
             position: absolute;
+            justify-content: center;
             flex-direction: column;
+            gap: 2rem;
             top: 0rem;
             height: 0;
             width: 0;
@@ -686,13 +694,15 @@ body::-webkit-scrollbar-track {
 
 
             a {
-                border-bottom: solid 1px rgb(255, 255, 255);
                 color: #fff;
+                gap: 0;
             }
 
             .bi-moon-stars-fill {
                 color: #fff;
             }
+
+           
 
             &.menuspeed {
                 height: 100vh;

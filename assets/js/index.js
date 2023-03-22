@@ -24,6 +24,8 @@ darkLigth.addEventListener("click", function () {
         skill.classList.add("dark")
         portfolio.classList.add("dark")
         contato.classList.add("dark")
+        document.querySelector(".bi-list").color="#fff"
+        
         
     } else if (this.classList.toggle("bi-moon-stars-fill")) {
         
@@ -34,31 +36,10 @@ darkLigth.addEventListener("click", function () {
         skill.classList.remove("dark")
         portfolio.classList.remove("dark")
         contato.classList.remove("dark")
-       
+        document.querySelector(".bi-list").color="#000"
     }
 
 })
-
-const btnArrowHeigthCard = document.querySelectorAll(".bi-arrow-down-square")
-btnArrowHeigthCard.forEach((btnArrow) => {
-    btnArrow.addEventListener("click", HeigthCard)
-})
-
-function HeigthCard(element) {
-    const cardElemento = element.target
-    let cardHeigth = cardElemento.closest(".card-skill")
-
-    if (this.classList.toggle("bi-x-circle")) {
-        this.classList.remove("bi-arrow-down-square")
-        cardHeigth.classList.add("heigthCard")
-
-    } else if (this.classList.toggle("bi-arrow-down-square")) {
-        this.classList.remove("bi-x-circle")
-        cardHeigth.classList.remove("heigthCard")
-    }
-
-}
-
 
 const menu = document.querySelector(".bi-list")
 menu.addEventListener("click", menuSpeed)
@@ -85,6 +66,8 @@ function removeMenuClick(e) {
     document.querySelector(".menu").classList.remove("bi-x-lg")
     document.querySelector(".menu").classList.add("bi-list")
 }
+
+
 
 let carouselItems = document.querySelectorAll(".carousel-items")
 const rightCarousel = document.querySelector(".bi-arrow-right-circle-fill")
@@ -114,6 +97,28 @@ leftCarousel.addEventListener("click", function () {
     })
     carouselItems[currentIndexCarousel].classList.add("hidden")
 })
+
+
+const btnArrowHeigthCard = document.querySelectorAll(".bi-arrow-down-square")
+btnArrowHeigthCard.forEach((btnArrow) => {
+    btnArrow.addEventListener("click", HeigthCard)
+})
+
+function HeigthCard(element) {
+    const cardElemento = element.target
+    let cardHeigth = cardElemento.closest(".card-skill")
+
+    if (this.classList.toggle("bi-x-circle")) {
+        this.classList.remove("bi-arrow-down-square")
+        cardHeigth.classList.add("heigthCard")
+
+    } else if (this.classList.toggle("bi-arrow-down-square")) {
+        this.classList.remove("bi-x-circle")
+        cardHeigth.classList.remove("heigthCard")
+    }
+
+}
+
 
 
 const elementosAnimationScroll = document.querySelectorAll("[data-anime]")
