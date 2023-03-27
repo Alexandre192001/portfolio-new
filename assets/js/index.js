@@ -38,7 +38,6 @@ darkLigth.addEventListener("click", function () {
         contato.classList.remove("dark")
         document.querySelector(".bi-list").color="#000"
     }
-
 })
 
 const menu = document.querySelector(".bi-list")
@@ -66,8 +65,6 @@ function removeMenuClick(e) {
     document.querySelector(".menu").classList.remove("bi-x-lg")
     document.querySelector(".menu").classList.add("bi-list")
 }
-
-
 
 let carouselItems = document.querySelectorAll(".carousel-items")
 const rightCarousel = document.querySelector(".bi-arrow-right-circle-fill")
@@ -118,8 +115,6 @@ function HeigthCard(element) {
     }
 
 }
-
-
 
 const elementosAnimationScroll = document.querySelectorAll("[data-anime]")
 const animationClass = "animate"
