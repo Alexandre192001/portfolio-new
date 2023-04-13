@@ -26,4 +26,4 @@
 <li>npm install</li>
 </ul>
 <hr>
-URL Demo :   https://portfolio-pessoal-alexandre.netlify.app/
+URL Demo : https://portfolio-pessoal-alexandre.netlify.app/
