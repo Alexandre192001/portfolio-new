@@ -322,6 +322,20 @@ body::-webkit-scrollbar-track {
                             gap: 1rem;
                             width: 90%;
 
+                            .linguage-programming{
+                                display: block;
+                                width: 100%;
+
+                                .icons-linguagens{
+
+                                    display: flex;
+                                    gap: 1rem;
+                                    img{
+                                        display: block;
+                                    }
+                                }
+                            }
+
                             .btn-projetos{
                                 margin-top: 1rem;
                                 display: flex;

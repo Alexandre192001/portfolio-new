@@ -276,6 +276,17 @@ body::-webkit-scrollbar-track {
   gap: 1rem;
   width: 90%;
 }
+.container-main .container-portfolio .carousel-container-wrapper .carousel .carousel-items.hidden .description-itens .linguage-programming {
+  display: block;
+  width: 100%;
+}
+.container-main .container-portfolio .carousel-container-wrapper .carousel .carousel-items.hidden .description-itens .linguage-programming .icons-linguagens {
+  display: flex;
+  gap: 1rem;
+}
+.container-main .container-portfolio .carousel-container-wrapper .carousel .carousel-items.hidden .description-itens .linguage-programming .icons-linguagens img {
+  display: block;
+}
 .container-main .container-portfolio .carousel-container-wrapper .carousel .carousel-items.hidden .description-itens .btn-projetos {
   margin-top: 1rem;
   display: flex;
