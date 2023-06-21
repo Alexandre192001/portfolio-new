@@ -12,7 +12,7 @@
 <h2>⚜️Descriçao⚜️</h2>
 <p>Portfólio pessoal, com informações sobre meus conhecimentos, projetos e como entrar em contato comigo.</p>
 <hr>
-<h2>⚜️Funcionalidades:⚜️</h2>
+<h2>⚜️Funcionalidades⚜️</h2>
 <ul>
 <li>Download CV - faz o download do meu currículo.</li>
 </ul>
